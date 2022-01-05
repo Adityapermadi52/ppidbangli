@@ -75,37 +75,7 @@
     	<h1>Dashboard</h1>
     </div> 
     <div class="bs-docs-section dashboard">
-    	<h3><i class="fa fa-newspaper-o"></i> Jumlah </h3>
-    	<hr>
-    	<div class="row">
-    		<div class="col-md-6">
-    			<a href="<?php echo base_url('manage_berita'); ?>">
-    				<div class="media bg-primary">
-    					<div class="media-left">
-    						<i style="font-size:34px" class="fa fa-files-o"></i>
-    					</div>
-    					<div class="media-body">
-    						<h1></h1>
-    						<p>Berita</p>
-    					</div>
-    				</div>
-    			</a>
-    		</div><!-- .col-md-6 -->
-    
-    		<div class="col-md-6">
-    			<a href="<?php echo base_url('manage_produk'); ?>">
-    				<div class="media bg-primary">
-    					<div class="media-left">
-    						<i style="font-size:34px" class="fa fa-folder-open-o"></i>
-    					</div>
-    					<div class="media-body">
-    						<h1></h1>
-    						<p>Pengumuman</p>
-    					</div>
-    				</div>
-    			</a>
-    		</div><!-- .col-md-6 -->
-    	</div><!-- .row-->
+    	
     </div>
 </div>
 <?= $this->endSection() ?>
