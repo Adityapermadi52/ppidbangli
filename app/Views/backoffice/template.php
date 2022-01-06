@@ -39,7 +39,7 @@
     <script src="<?php echo base_url('public/js/navmenu.js'); ?>"></script>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-dark bg-danger">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -60,35 +60,42 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Pengaturan <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url('manage_pengaturan') ?>">Pengaturan Umum</a></li>
+                            <li><a href="<?php echo base_url('manage_pengaturan') ?>">Tampilan</a></li>
                             <li><a href="<?php echo base_url('manage_menumanager') ?>">Menu Manager</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?php echo base_url('manage_service'); ?>">Service</a></li>
-                    <li><a href="<?php echo base_url('manage_client'); ?>">Client</a></li>
-                    <li><a href="<?php echo base_url('manage_award'); ?>">Award</a></li>
-                    <li><a href="<?php echo base_url('manage_berita'); ?>">Berita</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Project<span class="caret"></span></a>
+                           aria-expanded="false">Data <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url('manage_kategori_project'); ?>">Kategori Project</a></li>
-                            <li><a href="<?php echo base_url('manage_subkategori_project'); ?>">Subkategori Project</a></li>
-                            <li><a href="<?php echo base_url('manage_project'); ?>">Project</a></li>
+                            <li><a href="<?php echo base_url('manage_pengumuman') ?>">Pengumuman</a></li>
+                            <li><a href="<?php echo base_url('manage_agenda') ?>">Agenda</a></li>
+                            <li><a href="<?php echo base_url('manage_artikel') ?>">Artikel</a></li>
+                            <li><a href="<?php echo base_url('manage_kategori_informasi_publik') ?>">Kategori Informasi Publik</a></li>
+                            <li><a href="<?php echo base_url('manage_daftar_informasi_publik') ?>">Daftar Informasi Publik</a></li>
+                            <li><a href="<?php echo base_url('manage_kritik&saran') ?>">Kritik & saran</a></li>
+                        </ul>
+                    </li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Berita <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="<?php echo base_url('manage_kategoriberita') ?>">Kategori Berita</a></li>
+                            <li><a href="<?php echo base_url('manage_kategorikabupaten') ?>">Kategori Kabupaten</a></li>
+                            <li><a href="<?php echo base_url('manage_berita') ?>">Berita</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Extra<span class="caret"></span></a>
+                           aria-expanded="false">Ekstra <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="<?php echo base_url('manage_kontak'); ?>">Kontak Email</a></li>
-                            <li><a href="<?php echo base_url('manage_kontak_kami'); ?>">Kontak Kami</a></li>
-                            <li><a href="<?php echo base_url('manage_slider'); ?>">Slider</a></li>
-                            <li><a href="<?php echo base_url('manage_icon'); ?>">Icon</a></li>
-                            <li><a href="<?php echo base_url('manage_media'); ?>">Sosial Media</a></li>
-                            <li><a href="<?php echo base_url('manage_embed'); ?>">Embed</a></li>
+                            <li><a href="<?php echo base_url('manage_slider') ?>">Slider</a></li>
+                            <li><a href="<?php echo base_url('manage_runningtext') ?>">Running Text</a></li>
+                            <li><a href="<?php echo base_url('manage_berita') ?>">Berita</a></li>
+                            <li><a href="<?php echo base_url('manage_situsterkait') ?>">Situs Terkait</a></li>
+                            <li><a href="<?php echo base_url('manage_mediasosial') ?>">Media SOsial</a></li>
                         </ul>
-                    </li>
+                        </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -103,8 +110,8 @@
                             <li class="divider"></li>
                             <li><a tabindex="-1" href="<?php echo base_url('backoffice/logout'); ?>">Logout</a></li>
                         </ul>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
@@ -116,7 +123,7 @@
     	</div> 
 	</div> 
     <?= $this->renderSection('content') ?>
-    <hr>
+    <hr>    
     <div id="notifications"><?php echo session()->getFlashData('msg'); ?></div> 
     <style>
         #notifications {

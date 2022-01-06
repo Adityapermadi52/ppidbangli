@@ -71,8 +71,8 @@
 	}
 </style>
 <div class="container">
-    <div class="page-header text-center">
-    	<h1>Dashboard</h1>
+    <div class="page-header text-left">
+    	<h1>Daftar Informasi Publik</h1>
     </div> 
     <div class="bs-docs-section dashboard">
     	

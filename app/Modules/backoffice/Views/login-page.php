@@ -25,7 +25,7 @@
     <br>
     <input type="text" id="captcha" name="captcha" class="form-control" placeholder="Captcha" value="<?= old('captcha') ?>">
     <br>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Baru</button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign IN</button>
     <br>
     <style>
         div .errors > ul{
